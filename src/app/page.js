@@ -1,26 +1,25 @@
 import Image from "next/image";
+import logo from "../public/pyschemainlogo.png"; // adjust if file path differs
+import "./globals.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen p-8 bg-black text-white">
+    <main className="home-container">
       <Image
-        src="/pyschemainlogo.png"
-        alt="PsycheTV+ Logo"
-        width={300}
-        height={300}
-        priority
+        src={logo}
+        alt="PyscheTV+ Logo"
+        width={200}
+        height={200}
+        className="logo"
       />
+      <div className="hero-text">Welcome to PyscheTV+</div>
+      <div className="typing-glow">Originals. Cartoons. Imagination.</div>
 
-      <h1 className="mt-6 text-2xl font-semibold">Welcome to PyscheTV+</h1>
-      <p className="mt-2 text-gray-400 text-center max-w-md">
-        Edit this page by opening <code>src/app/page.js</code> in your editor.
-      </p>
-
-      <a href="/kids">
-        <div className="mt-6 inline-block px-6 py-3 bg-yellow-400 text-black font-bold rounded shadow hover:scale-105 transition">
-          Go to PyscheTV Kids
-        </div>
-      </a>
+      <Link href="/kids">
+        <button className="cta-button">Go to PyscheTV Kids</button>
+      </Link>
     </main>
   );
 }
+
