@@ -16,4 +16,16 @@ export default function RootLayout({ children }) {
     </html>
   )
 }
+import Footer from './components/Footer';
+
+export default function RootLayout({ children }) {
+  return (
+    <html>
+      <body>
+        {children}
+        <Footer />
+      </body>
+    </html>
+  );
+}
 
