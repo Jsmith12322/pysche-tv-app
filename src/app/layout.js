@@ -1,10 +1,11 @@
-import './globals.css'
-import { Analytics } from '@vercel/analytics/react'
+import './globals.css';
+import { Analytics } from '@vercel/analytics/react';
+import Footer from './components/Footer';
 
 export const metadata = {
   title: 'PyscheTV',
-  description: 'Welcome to PyscheTV – a new world of content',
-}
+  description: 'Welcome to PyscheTV — a new world of content',
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -12,20 +13,8 @@ export default function RootLayout({ children }) {
       <body>
         {children}
         <Analytics />
-      </body>
-    </html>
-  )
-}
-import Footer from './components/Footer';
-
-export default function RootLayout({ children }) {
-  return (
-    <html>
-      <body>
-        {children}
         <Footer />
       </body>
     </html>
   );
 }
-
