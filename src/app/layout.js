@@ -1,6 +1,6 @@
 import './globals.css';
 import { Analytics } from '@vercel/analytics/react';
-import Footer from './components/FooterComponent';
+import Footer from '../components/SiteFooter';
 
 export const metadata = {
   title: 'PyscheTV',
@@ -18,3 +18,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
