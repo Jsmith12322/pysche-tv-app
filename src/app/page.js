@@ -1,18 +1,18 @@
-import Image from "next/image";
-import logo from "../public/pyschemainlogo.png"; // adjust if file path differs
-import "./globals.css";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
+import '../globals.css';
 
 export default function Home() {
   return (
-    <main className="home-container">
+    <main>
       <Image
-        src={logo}
+        src="/pyschemainlogo.png"
         alt="PyscheTV+ Logo"
         width={200}
         height={200}
         className="logo"
       />
+
       <div className="hero-text">Welcome to PyscheTV+</div>
       <div className="typing-glow">Originals. Cartoons. Imagination.</div>
 
@@ -22,4 +22,3 @@ export default function Home() {
     </main>
   );
 }
-
