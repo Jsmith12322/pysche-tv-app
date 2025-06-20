@@ -1,6 +1,6 @@
 import './globals.css';
 import { Analytics } from '@vercel/analytics/react';
-import Footer from '../components/SiteFooter';
+import Footer from '../components/SiteFooter.js';
 
 export const metadata = {
   title: 'PyscheTV',
