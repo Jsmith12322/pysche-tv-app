@@ -24,3 +24,141 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+@keyframes typingGlow {
+  0%, 100% {
+    box-shadow: 0 0 0px #fff;
+  }
+  50% {
+    box-shadow: 0 0 8px 2px #ffd700, 0 0 12px 6px #7f5af0;
+  }
+}
+
+.typing-glow {
+  animation: typingGlow 2s infinite ease-in-out;
+}
+/* Home Page Styling */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+.logo {
+  width: 180px;
+  margin-bottom: 1.5rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-text {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.typing-glow {
+  font-size: 1rem;
+  color: #ffd700;
+  margin-bottom: 2rem;
+  animation: typingGlow 2s infinite ease-in-out;
+  font-family: 'Courier New', monospace;
+}
+
+.cta-button {
+  background: linear-gradient(to right, #ffd700, #ff7af0);
+  color: black;
+  font-weight: bold;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ff7af0;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffd700;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes typingGlow {
+  0%, 100% {
+    box-shadow: 0 0 0px #fff;
+  }
+  50% {
+    box-shadow: 0 0 8px 2px #ffd700, 0 0 12px 6px #ff7af0;
+  }
+}
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 2rem;
+  background: radial-gradient(circle at center, #1a1a1a 0%, #0a0a0a 100%);
+  color: var(--foreground);
+}
+
+.logo {
+  animation: fadeIn 1s ease-out;
+  margin-bottom: 2rem;
+}
+
+.hero-text {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  background-color: #ffd700;
+  color: #000;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: fadeIn 1.2s ease-out;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffd700;
+}
+
+.typing-glow {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  animation: typingGlow 2s infinite ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes typingGlow {
+  0%, 100% {
+    box-shadow: 0 0 0px #fff;
+  }
+  50% {
+    box-shadow: 0 8px 2px #ffd700, 0 12px 6px #7f5af0;
+  }
+}
