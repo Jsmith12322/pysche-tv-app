@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main>
       <Image
-        src="/pyschemainlogo.png"
+        src="/pyschenetlogo.png"
         alt="PyscheTV+ Logo"
         width={200}
         height={200}
