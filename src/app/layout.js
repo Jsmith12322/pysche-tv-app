@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 
 export const metadata = {
   title: 'PyscheTV',
-  description: 'Welcome to PyscheTV — a new world of content',
+  description: 'Welcome to PyscheTV',
 };
 
 export default function RootLayout({ children }) {

@@ -8,7 +8,7 @@ export default function Footer() {
         fontSize: '0.9rem',
         marginTop: '2rem'
       }}>
-        © 2025 PyscheTV · All Rights Reserved
+        © 2025 PyscheTV — All Rights Reserved
       </footer>
     );
   }
