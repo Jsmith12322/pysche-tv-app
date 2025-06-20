@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import '../globals.css';
+import './globals.css';
 
 export default function Home() {
   return (
@@ -22,4 +22,3 @@ export default function Home() {
     </main>
   );
 }
-
